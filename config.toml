@@ -4,7 +4,7 @@ theme = "codex"
 # Override these settings with your own
 title = "Code Review"
 languageCode = "en-us"
-baseURL = "https://example.org/"
+baseURL = "nadirabid.github.io"
 copyright = "© 2020"
 
 # Add your Disqus shortname here.
@@ -61,9 +61,9 @@ copyright = "© 2020"
   url = "/"
 
 [[menu.main]]
-  identifier = "blog"
-  name = "blog"
-  title = "Blog"
+  identifier = "podcasts"
+  name = "podcasts"
+  title = "podcasts"
   url = "/posts"
 
 
