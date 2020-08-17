@@ -6,9 +6,10 @@
     
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}    
 
+{{- $pages := (where .Pages "Type" "posts") -}}
 <div class="post-list__container">
   <ul class="post-list">
-    {{ range .Pages }}
+    {{ range $pages }}
     <li class="post">
       <div class="post__header">
         <time class="post__date" datetime="{{ .Date }}"
