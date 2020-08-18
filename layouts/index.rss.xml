@@ -34,12 +34,12 @@
     <googleplay:owner>nadirabid@gmail.com</googleplay:owner>
     <googleplay:author>Nadir Muzaffar</googleplay:author>
     <itunes:new-feed-url>{{ .Site.BaseURL }}/index.xml</itunes:new-feed-url>
-    <itunes:subtitle>"Lets talk engineering"</itunes:subtitle>
-    <itunes:summary>"Podcasting as a way of teaching each other about things in engineeering"</itunes:summary>
+    <itunes:subtitle>Lets talk engineering</itunes:subtitle>
+    <itunes:summary>Podcasting as a way of teaching each other about things in engineeering</itunes:summary>
     <itunes:category text="Technology">
         <itunes:category text="Tech News" />
     </itunes:category>
-    <itunes:author>"Code Review"</itunes:author>
+    <itunes:author>Code Review</itunes:author>
     <itunes:owner>
         <itunes:name>Nadir Muzaffar</itunes:name>
         <itunes:email>nadirabid@gmail.com</itunes:email>
