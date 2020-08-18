@@ -29,6 +29,15 @@
   }
 }
 
+.splash-logo {
+  margin-right:3em;
+  display: none;
+  
+  @media screen and (min-width: $medium) {
+    display: block;
+  }
+}
+
 .fancy {
   color: $primary;
 }
