@@ -22,8 +22,12 @@ copyright = "© 2020"
   podcastURL = "https://code-review-podcast.s3.us-east-2.amazonaws.com/"
 
   # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
-  twitter = "https://twitter.com/<your handle>"
-  github = "https://github.com/<your handle>"
+
+  github = "https://github.com/nadirabid"
+  apple = "/"
+  spotify = "/"
+  google = "/"
+
   # email = "mailto:<your email>"
   # facebook = "https://facebook.com/<your handle>"
   # gitlab = "https://gitlab.com/<your handle>"
@@ -34,7 +38,7 @@ copyright = "© 2020"
   # Titles for your icons (shown as tooltips), and also their display order.
   # Currently, these icons are supported: 
   #   "Twitter", "GitHub", "Email", "Facebook", "GitLab", "Instagram", "LinkedIn", "YouTube"
-  iconOrder = ["Twitter", "GitHub"]
+  iconOrder = ["Apple", "Spotify", "Google"]
 
   # Metadata for Twitter cards, defaults to params.twitter
   # twitterSite = "@<your handle>"
