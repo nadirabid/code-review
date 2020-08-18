@@ -5,8 +5,8 @@
 {{ define "main" }}
 
 <div class="splash-container">
+  <div style="margin-right:3em;"><img width="220" src="/logo.jpg"/></div>
   <div class="splash">
-    
     <h1>{{ .Params.heading }}<span class="fancy">.</span></h1>
     {{ if isset .Params "handle" }}
     <span class="handle">{{ .Params.handle }}</span>
@@ -15,7 +15,6 @@
       {{ .Params.subheading }}
     </h2>
     <!-- Replace MEEEEE -->
-
     {{ partial "social-icons.html" .}}
   </div>
 </div>
