@@ -26,6 +26,7 @@ copyright = "© 2020"
   github = "https://github.com/nadirabid"
   apple = "https://podcasts.apple.com/us/podcast/code-review/id1528099679"
   spotify = "https://open.spotify.com/show/3fbDJ4lJSQwXMcwpnE3G55"
+  stitcher = "https://www.stitcher.com/podcast/code-review?refid=stpr"
   google = "/"
 
   # email = "mailto:<your email>"
@@ -38,7 +39,7 @@ copyright = "© 2020"
   # Titles for your icons (shown as tooltips), and also their display order.
   # Currently, these icons are supported: 
   #   "Twitter", "GitHub", "Email", "Facebook", "GitLab", "Instagram", "LinkedIn", "YouTube"
-  iconOrder = ["Apple", "Spotify", "Google"]
+  iconOrder = ["Apple", "Spotify", "Google", "Stitcher"]
 
   # Metadata for Twitter cards, defaults to params.twitter
   # twitterSite = "@<your handle>"
