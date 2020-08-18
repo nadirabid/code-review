@@ -18,6 +18,7 @@
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
      xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
@@ -30,33 +31,35 @@
     <sy:updateFrequency>1</sy:updateFrequency>
     <language>en</language>
     <copyright>{{ with .Site.Copyright }}{{.}}{{ end }}</copyright>
-    <itunes:new-feed-url>{{ .Site.BaseURL }}/podcasts/index.xml</itunes:new-feed-url>
-    <itunes:subtitle>"This is a subtitle"</itunes:subtitle>
-    <itunes:summary>"This is the podcast description"</itunes:summary>
+    <googleplay:owner>nadirabid@gmail.com</googleplay:owner>
+    <googleplay:author>Nadir Muzaffar</googleplay:author>
+    <itunes:new-feed-url>{{ .Site.BaseURL }}/index.xml</itunes:new-feed-url>
+    <itunes:subtitle>"Lets talk engineering"</itunes:subtitle>
+    <itunes:summary>"Podcasting as a way of teaching each other about things in engineeering"</itunes:summary>
     <itunes:category text="Technology">
         <itunes:category text="Tech News" />
     </itunes:category>
-    <itunes:author>"Office Hours Hangout"</itunes:author>
+    <itunes:author>"Code Review"</itunes:author>
     <itunes:owner>
-        <itunes:name>"Nadir Muzaffar"</itunes:name>
-        <itunes:email>"email@email.com"</itunes:email>
+        <itunes:name>Nadir Muzaffar</itunes:name>
+        <itunes:email>nadirabid@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:block>no</itunes:block>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="http://drops.albush.com/RAX%20CLOUD%20OFFICE%20HANGOUT%20FINAL.png" />
+    <itunes:image href="http://nadirabid.github.io/logo.jpg" />
     {{ range $pages }}
     <item>
-        <link>{{ .Permalink }}</link>
+        <link>{{ .Site.Params.podcastURL }}{{ .Params.permalink }}</link>
         <title>{{ .Title }}</title>
         <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
         <description>{{ .Params.summary }}</description>
 
-        <enclosure url="{{ .Params.mp3 }}" length="{{ .Params.length }}" type="audio/mpeg" />
-        <guid>{{ .Params.mp3 }}</guid>
+        <enclosure url="{{ .Site.Params.podcastURL }}{{ .Params.mp3 }}" length="{{ .Params.length }}" type="audio/mpeg" />
+        <guid>{{ .Site.Params.podcastURL }}{{ .Params.mp3 }}</guid>
 
         <itunes:author>{{ .Params.author }}</itunes:author>
         <itunes:summary>{{ .Content | html }}</itunes:summary>
-        <itunes:image href="http://drops.albush.com/RAX%20CLOUD%20OFFICE%20HANGOUT%20FINAL.png" />
+        <itunes:image href="http://nadirabid.github.io/logo.jpg" />
         <itunes:duration>{{ .Params.duration }}</itunes:duration>
         <itunes:keywords>{{ .Params.tags }}</itunes:keywords>
     </item>

@@ -4,7 +4,7 @@ theme = "codex"
 # Override these settings with your own
 title = "Code Review"
 languageCode = "en-us"
-baseURL = "nadirabid.github.io"
+baseURL = "/"
 copyright = "© 2020"
 
 # Add your Disqus shortname here.
@@ -18,6 +18,8 @@ copyright = "© 2020"
   # Follow the Hugo date/time format reference here: 
   # https://gohugo.io/functions/format/#gos-layout-string
   dateFormat = "Jan 2 2006"
+
+  podcastURL = "https://code-review-podcast.s3.us-east-2.amazonaws.com/"
 
   # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
   twitter = "https://twitter.com/<your handle>"
