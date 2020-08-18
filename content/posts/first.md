@@ -2,7 +2,7 @@
 title: "MMap"
 date: 2020-08-16T22:16:32-07:00
 summary: "
-This was our first go. It's crap - but we enjoyed it. 
+This was our first go.
 
 Carl walks us through a new concept called MMap (memory map). The idea here is to get some intuition about how we use shared memory between different processes to achieve IPC (interprocess communication).
 "
