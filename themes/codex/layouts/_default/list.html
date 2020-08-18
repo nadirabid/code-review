@@ -1,11 +1,29 @@
 {{ define "styles" }}
     {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/posts.scss" "dest" "css/posts.css") }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw==" crossorigin="anonymous" />
+{{ end }}
+
+{{ define "scripts" }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+  {{ range (where .Pages "Type" "posts") }}
+  <script>
+    const ap = new APlayer({
+        container: document.getElementById('{{ .Params.mp3 }}'),
+        audio: [{
+            name: '{{ .Title }}',
+            artist: '{{ .Params.author }}',
+            url: '{{ .Site.Params.podcastURL }}{{ .Params.mp3 }}',
+            cover: '/logo.jpg',
+            mutex: true // prevent multiple from playing at once
+        }]
+    });
+  </script>
+  {{ end }}
 {{ end }}
 
 {{ define "main" }}
     
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}    
-
 {{- $pages := (where .Pages "Type" "posts") -}}
 <div class="post-list__container">
   <ul class="post-list">
@@ -15,8 +33,12 @@
         <time class="post__date" datetime="{{ .Date }}"
           >{{ .Date.Format $dateFormat }}</time>
         <h2 class="post__title">
-          <a href="{{.RelPermalink}}">{{ .Title }}</a>
+          {{ .Title }}
         </h2>
+        <div class="post__summary">
+          {{ .Params.summary }}
+        </div>
+        <div class="post__player" id="{{ .Params.mp3 }}" ></div>
         {{ partial "tags.html" .}}
       </div>
     </li>

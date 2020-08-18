@@ -1,9 +1,13 @@
 ---
 title: "MMap"
 date: 2020-08-16T22:16:32-07:00
-summary: "Carl walks us through his hobbyist usage of MMap for IPC"
+summary: "
+This was our first go. It's crap - but we enjoyed it. 
+
+Carl walks us through a new concept called MMap (memory map). The idea here is to get some intuition about how we use shared memory between different processes to achieve IPC (interprocess communication).
+"
 mp3: "Podcast.MMap.Publish.mp3"
-author: "Carl, Lev, Nadir"
+author: "Carl Saldhana"
 duration: "00:30:00"
 permalink: "Podcast.MMap.Publish.mp3"
 tags:

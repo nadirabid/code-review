@@ -1,5 +1,6 @@
 @import "../main";
 @import "../partials/post-list";
+@import "../partials/vars";
 
 .tags__list {
   list-style: none;
@@ -34,6 +35,16 @@
   }
 }
 
+.post__player {
+  margin: 10px 0 0 0;
+}
+
+.post__summary {
+  color: $grey;
+  margin: 10px 0 0 0;
+  font-size: 0.9em;
+}
+
 .tag__link {
   text-decoration: none;
   color: $grey;
@@ -55,3 +66,5 @@
   display: flex;
   justify-content: space-between;
 }
+
+
