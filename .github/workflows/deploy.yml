@@ -21,7 +21,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.CI_TOKEN }}
-          external_repository: nadirabid.github.io
+          external_repository: nadirabid/nadirabid.github.io
           publish_dir: ./public
           #   keep_files: true
           user_name: nadirabid
