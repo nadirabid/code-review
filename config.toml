@@ -2,7 +2,7 @@
 theme = "codex" 
 
 # Override these settings with your own
-title = "Code Review (Test)"
+title = "Code Review"
 languageCode = "en-us"
 baseURL = "/"
 copyright = "© 2020"
