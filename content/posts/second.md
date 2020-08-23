@@ -1,6 +1,6 @@
 ---
 title: "Lock Free Programming"
-date: 2020-08-22T22:16:32-07:00
+date: 2020-08-21T22:16:32-07:00
 summary: "
 Lev walks us through Lock Free Programming, a form of multi-threaded programming that has no mutexes. 
 "
